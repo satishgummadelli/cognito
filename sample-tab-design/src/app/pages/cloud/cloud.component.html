@@ -1,0 +1,24 @@
+<div class="page-dash">
+    <div class="uk-container uk-container-expand uk-section">
+        <app-header></app-header>
+        <section class="main uk-section">
+            <div class="" uk-grid>
+                <div class="uk-width-auto">
+                    <div class="uk-card uk-card-default uk-card-body uk-padding-remove">
+                        <ul class="uk-list uk-list-striped">
+                            <li *ngFor="let menu of menus" routerLinkActive="uk-active">
+                                <a routerLink="{{ menu.url }}">
+                                    <span class="uk-margin-small-right uk-icon" uk-icon="icon: cloud-upload"></span>{{ menu.name }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-width-expand">
+                    <div class="uk-card uk-card-default uk-card-body uk-height-large">
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<header>
+    <ul class="uk-flex-center" uk-tab>
+      <li *ngFor="let platform of platforms" class="pointer" (click)="goToDetailPage(platform.url)">
+        <div class="uk-tile uk-tile-default uk-padding">
+          <img style="width:150px;" src="{{ platform.img }}" alt="" style="width:160px;height: 60px;">
+        </div>
+      </li>
+    </ul>
+  </header>

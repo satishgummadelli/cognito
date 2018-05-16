@@ -1,0 +1,25 @@
+<div class="auto-form-wrapper uk-position-center">
+  <form (submit)="loginUser($event)"  novalidate autocomplete="off">
+    <h3 class="title uk-margin-remove">Vodafone PCS</h3>
+    <p class="uk-margin-remove uk-text-meta uk-text-small">Enter your details below.</p>
+    <div class="uk-margin">
+      <div class="uk-inline">
+        <span class="uk-form-icon" uk-icon="icon: user"></span>
+        <input class="uk-input login-input" type="text" name="username" #username ngModel id="username" placeholder="username" autocomplete="off">
+      </div>
+    </div>
+    <div class="uk-margin">
+      <div class="uk-inline">
+        <span class="uk-form-icon" uk-icon="icon: unlock"></span>
+        <input class="uk-input login-input" type="password" #password ngModel id="password" name="password" placeholder="password" id="password">
+      </div>
+    </div>
+    <button type="submit" class="uk-button uk-button-primary">
+      <span>Login</span>
+    </button>
+
+    <div class="wrapper uk-text-meta uk-margin-top">
+      <p class="footer-text uk-margin-remove">Copyright © 2018 vodafone. All rights reserved.</p>
+    </div>
+  </form>
+</div>

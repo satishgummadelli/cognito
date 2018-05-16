@@ -1,0 +1,51 @@
+body {
+    background: url('/assets/imgs/bg.png') !important;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.footer-text {
+    color: #fff;
+}
+
+.auto-form-wrapper {
+    .title,
+    p {
+        color: #fff;
+    }
+    form {
+        width: 50%;
+        min-width: 300px;
+        max-width: 480px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        .auth-footer {
+            list-style-type: none;
+            display: -webkit-flex;
+            display: flex;
+            margin-top: 7px;
+            padding-left: 0;
+            margin-bottom: 0;
+            li {
+                margin-right: 10px;
+                line-height: 1;
+                padding-right: 10px;
+                border-right: 1px solid #fff;
+                &:last-child {
+                    margin-right: 0;
+                    border-right: none;
+                }
+                a {
+                    font-size: 13px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .uk-margin {
+        .uk-inline {
+            width: 100%;
+        }
+    }
+}
